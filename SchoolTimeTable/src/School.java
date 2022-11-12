@@ -209,10 +209,10 @@ public class School extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
          try {
-            String classname = txtClass.getText();
+            String unit = txtUnit.getText();
             
             pst = con.prepareStatement("insert into unit(unit)values(?)");
-            pst.setString(1, classname);
+            pst.setString(1, unit);
             
             pst.executeUpdate();
             JOptionPane.showMessageDialog(this, "Unit Registration Successful");
